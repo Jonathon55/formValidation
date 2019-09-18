@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tv Show Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://kit.fontawesome.com/33df6c356e.js"></script>
+
+
+	<style>
+		.success, .error {
+			color: white;
+			padding: 5px;
+			margin: 5px 0 15px 0;
+		}
+
+		.fa-exclamation-triangle {
+         color:red;
+        
+		}
+
+		.alert {
+			padding:0;
+		}
+
+		.success {
+			background-color: green;
+			text-align: center;
+		}
+
+		.error {
+			background-color: red;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>   
+  <div class="container">
+  	<h1 class="text-center">Shows To Catch Up On</h1>
+  	<form id="addshows">
+  		
+  	    <label for="showname" id="errorlabel">Show/Move Name</label>
+  		<input type="text" class="form-control" id="showname" placeholder="Ex. Stranger Things, Spiderman: Homecoming, etc">
+
+  		 <label for="platform">What Platform is the Show on?</label>
+  		<input type="text" class="form-control" id="platform" placeholder="Ex. Netflix, Hulu, Movie Theatre, Etc">
+
+  		<label for="whyagain">Reasons to Watch the Show?</label>
+  		<input type="text" class="form-control" id="whyagain" placeholder="Ex. Sequal, Good Trailer, Anime, etc">
+
+  		<div class="form-row">
+  			<div class="col">
+  				<label for="seasons">How Many Seasons?</label>
+  		        <select class="form-control" id="seasons" >
+  		        	<option>1</option>
+  		        	<option>2</option>
+  		        	<option>3</option>
+  		        	<option>4</option>
+  		        	<option>5</option>
+  		        	<option>6</option>
+  		        	<option>7</option>
+  		        	<option>8</option>
+  		        	<option>9</option>
+  		        	<option>10</option>
+  		        	<option>Alot!!</option>
+  		        </select>
+  		    </div>
+  		    <div class="col">
+  		    	<label for="whoelse">Who Else Watches this Show?</label>
+  		<input type="text" class="form-control" id="whoelse" placeholder="Ex. Jon, Rick, Naruto, Etc">
+  		    </div>
+  		</div>
+
+  		<label for="comments">Anything Else to Add?</label>
+  		<input type="text" class="form-control" id="comments" placeholder="Ex. This Show Comes off Netflix in 2 Weeks!!">
+	   
+	     <button type="submit" class="btn btn-primary">Submit</button>
+  	</form>
+
+  	<hr>
+  	<br>
+
+  	<table class="table">
+      <thead>
+        <tr>
+         <!-- <th scope="col">#</th> -->
+          <th scope="col">Show/Movie Name</th>
+          <th scope="col">Platform</th>
+          <th scope="col">Reason</th>
+          <th scope="col">Seasons</th>
+          <th scope="col">Friends</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      <tbody id="showtable">
+      	
+  </tbody>
+</table>
+  </div>
+
+
+
+<!-- <script src="newjs.js"></script> -->
+<script src="newprojectv2.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
